@@ -11,7 +11,7 @@ body {
 	background-color:black;
 }
 a {
-	color:#e7b038;
+	color:yellow;
 	text-decoration:underline;
 	cursor:pointer;
 }
@@ -52,6 +52,11 @@ textarea {
 .text-right {
 	text-align:right;
 }
+.text-right a{
+	color: red;
+	text-decoration: none;
+	font-size: 16px;
+}
 h2 {
 	font-size:10px;
 	color:#f2a223;
@@ -68,14 +73,20 @@ h4 {
 	font-weight:bold;
 }
 #shell {
-	width:980px;
+	/*width:980px;*/
+	width: 95%;
 	margin:0 auto;
 }
 #header {
 	position:relative;
 }
+.subheader1{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 h1#logo {
-	position:absolute;
+	/*position:absolute;*/
 	top:37px;
 	left:0;
 }
@@ -92,6 +103,7 @@ h1#logo a {
 h1#logo img{
      width:11rem;
 }
+
 
 .social {
 	float:right;
@@ -160,8 +172,8 @@ h1#logo img{
 #sub-navigation {
 	display:block;
 	clear:right;
-	border-top:1px dashed #666;
-	border-bottom:1px dashed #666;
+	/*border-top:1px dashed #666;
+	border-bottom:1px dashed #666;*/
 	padding:8px 0;
 }
 #sub-navigation ul {
@@ -199,8 +211,10 @@ h1#logo img{
 	width:238px;
 	border:1px solid #413e3e;
 	background:#000;
-	color:#787878;
+	color:white;
 	padding:2px 0 2px 2px;
+	border-radius: 10px;
+    height: 20px;
 }
 #search .search-button {
 	font-size:14px;
@@ -210,28 +224,70 @@ h1#logo img{
 	color:#fff;
 	cursor:pointer;
 }
+.slide-container img{
+	width: 100%;
+    height: 32rem;
+}
+.movie-details-c{
+  position: absolute;
+  display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-left: 35px;
+}
+.movie-details-c span{
+	color: red;
+}
+.movie-head-s{
+	color: white;
+	font-size: 80px;
+}
+.movie-rating-s{
+	color: white;
+	display: flex;
+	gap: 3rem;
+	font-size: 19px;
+}
+.movie-description-s{
+	font-size: 15px;
+}
+.sgt-s{
+	font-size:14px;
+	color: white;
+}
 #main {
-	border-bottom:1px dashed #413e3e;
+	/*border-bottom:1px dashed #413e3e;*/
 }
 #content {
+
 }
 .box {
-	width:980px;
-	border-bottom:1px dashed #413e3e;
+	width:100%;
+	/*border-bottom:1px dashed #413e3e;*/
 	padding-bottom:21px;
 }
 .box .head {
-	width:980px;
+	width:100%;
 	padding-top:14px;
 	padding-bottom:11px;
+	display: flex;
+    justify-content: space-between;
 }
 .box .head h2 {
 	float:left;
 	display:inline;
+	color: white;
+	font-size: 20px;
 }
+.moviecontainer{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .box .movie {
 	width:152px;
-	float:left;
+	/*float:left;*/
 	padding-right:12px;
 }
 .movie-image {
@@ -263,6 +319,7 @@ h1#logo img{
 	z-index:5;
 	cursor:pointer;
 	display:none;
+	display: none;
 }
 .movie span.name {
 	font-weight:bold;
