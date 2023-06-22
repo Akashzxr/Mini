@@ -10,6 +10,18 @@ body {
 	color:#ccc;
 	background-color:black;
 }
+.searchbtn img{
+	width: 24px;
+}
+.userprofile img{
+	border-radius: 50%;
+    width: 41px;
+}
+.userandsearch{
+	display: flex;
+	gap:3rem;
+	align-items: center;
+}
 a {
 	color:yellow;
 	text-decoration:underline;
@@ -42,11 +54,11 @@ textarea {
 	text-indent:-4000px;
 }
 .left, .alignleft {
-	float:left;
+	/*float:left;*/
 	display:inline;
 }
 .right, .alignright {
-	float:right;
+	/*float:right;*/
 	display:inline;
 }
 .text-right {
@@ -73,17 +85,25 @@ h4 {
 	font-weight:bold;
 }
 #shell {
-	/*width:980px;*/
-	width: 95%;
-	margin:0 auto;
+	
 }
 #header {
-	position:relative;
+	position: fixed;
+    width: 100%;
+	z-index: 5;
+	background: rgba(20, 20, 20, 0.5) !important;
+    -webkit-backdrop-filter: blur(0.625em);
+    backdrop-filter: blur(0.625em);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .subheader1{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	width: 100%;
+	padding: 18px;
 }
 h1#logo {
 	/*position:absolute;*/
@@ -104,64 +124,19 @@ h1#logo img{
      width:11rem;
 }
 
-
-.social {
-	float:right;
-	width:160px;
-	padding-top:11px;
-}
-.social span {
-	float:left;
-	display:inline;
-	font-size:10px;
-	color:#9f9f9f;
-	line-height:16px;
-	padding-right:5px;
-}
-.social ul {
-	list-style:none;
-}
-.social ul li {
-	float:left;
-	display:inline;
-	width:16px;
-	padding-right:2px;
-}
-.social ul li a {
-	float:left;
-	display:inline;
-	width:16px;
-	height:16px;
-	background:url('images/social.gif') no-repeat 0 0;
-	font-size:0;
-	line-height:0;
-	text-indent:-4000px;
-}
-.social ul li a.facebook {
-	background-position:-18px 0;
-}
-.social ul li a.vimeo {
-	background-position:-36px 0;
-}
-.social ul li a.rss {
-	background-position:-54px 0;
-}
 #navigation {
-	float:right;
-	clear:right;
-	padding-top:28px;
-	padding-bottom:47px;
+	
 }
 #navigation ul {
 	list-style:none;
+	display: flex;
+    gap: 4rem;
 }
 #navigation ul li {
-	float:left;
 	display:inline;
-	padding-left:29px;
 }
 #navigation ul li a {
-	font-size:14px;
+	font-size:17px;
 	font-weight:bold;
 	color:#fff;
 	text-decoration:none;
@@ -197,6 +172,7 @@ h1#logo img{
 #search {
 	width:346px;
 	margin:0 0 0 auto;
+	display: none;
 }
 #search label {
 	float:left;
@@ -226,7 +202,7 @@ h1#logo img{
 }
 .slide-container img{
 	width: 100%;
-    height: 32rem;
+	position: relative;
 }
 .movie-details-c{
   position: absolute;
@@ -437,8 +413,8 @@ h1#logo img{
 	white-space:nowrap;
 }
 #footer .lf {
-	float:left;
+	/*float:left;*/
 }
 #footer .rf {
-	float:right;
+	/*float:right;*/
 }
