@@ -206,6 +206,8 @@ h1#logo img{
 }
 .movie-details-c{
   position: absolute;
+  bottom: 36%;
+  z-index: 2;
   display: flex;
     flex-direction: column;
     gap: 13px;
@@ -215,8 +217,18 @@ h1#logo img{
 	color: red;
 }
 .movie-head-s{
-	color: white;
 	font-size: 80px;
+	background: url(../css/images/texure.jpg);
+    background-repeat: repeat-x;
+    background-position: 100% 100%;
+    color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1.34688px;
+    font-family: 'Fredericka the Great', cursive;
 }
 .movie-rating-s{
 	color: white;
