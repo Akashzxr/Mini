@@ -1,3 +1,7 @@
+@font-face {
+	font-family: 'Helvetica Neue Regular';
+	src: url(./HelveticaNeueBold.woff);
+}
 * {
 	margin:0;
 	padding:0;
@@ -103,7 +107,7 @@ h4 {
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	padding: 18px;
+    padding: 18px 58px 18px 58px;
 }
 h1#logo {
 	/*position:absolute;*/
@@ -204,20 +208,37 @@ h1#logo img{
 	width: 100%;
 	position: relative;
 }
-.movie-details-c{
-  position: absolute;
-  bottom: 36%;
-  z-index: 2;
-  display: flex;
-    flex-direction: column;
-    gap: 13px;
-    margin-left: 35px;
+.shade{
+	width: 100%;
+    height: 653px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(20, 20, 20, 0.9) 15%, rgba(83, 100, 141, 0) 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }
+.slide-container{
+	width: 100%;
+    height: 653px;
+    overflow: hidden;
+}
+
+.movie-details-c{
+	position: absolute;
+    bottom: 0;
+    top: 0;
+    margin-top: 6%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-left: 62px;
+}
+
 .movie-details-c span{
 	color: red;
 }
 .movie-head-s{
-	font-size: 80px;
+	font-size: 7em;
 	background: url(../css/images/texure.jpg);
     background-repeat: repeat-x;
     background-position: 100% 100%;
@@ -228,19 +249,36 @@ h1#logo img{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -1.34688px;
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Helvetica Neue Regular';
 }
 .movie-rating-s{
+	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+    line-height: 1.5;
 	color: white;
 	display: flex;
 	gap: 3rem;
-	font-size: 19px;
 }
 .movie-description-s{
-	font-size: 15px;
+	font-size: 1.3em;
+    color: white;
 }
+.p-btn-s{
+	background: #bf000a;
+    border: none;
+    color: white;
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.3em;
+}
+.p-btn-s:hover{
+	background-color: #8b040b;
+}
+  
 .sgt-s{
-	font-size:14px;
+	font-size:1.3em;
 	color: white;
 }
 #main {
