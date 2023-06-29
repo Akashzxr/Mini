@@ -1,260 +1,222 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<title>MovieHunter</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Fredericka+the+Great&display=swap" rel="stylesheet">
-<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="js/jquery-func.js"></script>
-<!--[if IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" /><![endif]-->
+  <title>MovieHunter</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Fredericka+the+Great&display=swap"
+    rel="stylesheet">
+  <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery-func.js"></script>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <!--[if IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" /><![endif]-->
 </head>
+
 <body>
-<!-- START PAGE SOURCE -->
-<div id="shell">
-  <div id="header">
-  <div class="subheader1">
-    <h1 id="logo"><a href="#">MovieHunter<img src="css/images/logo.png" alt="" /></a></h1>
-    <div id="navigation">
-      <ul>
-        <li><a class="active" href="#">HOME</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">IN THEATERS</a></li>
-        <li><a href="#">COMING SOON</a></li>
-      </ul>
-    </div>
-    <div class="userandsearch">
-       <a class="searchbtn">
-         <img src="./css/images/search.png"/>
-       </a>
-       <a class="userprofile">
-        <img src="./css/images/userlogo.jpg"/>
-       </a>
-    </div>
-  </div>
-    <div id="sub-navigation">
-      <div id="search">
-        <form action="#" method="get" accept-charset="utf-8">
-          <label for="search-field">SEARCH</label>
-          <input type="text" name="search field" value="Enter search here" id="search-field" class="blink search-field"  />
-          <input type="submit" value="GO!" class="search-button" />
-        </form>
+  <!-- START PAGE SOURCE -->
+  <div id="shell">
+    <div id="header">
+      <div class="subheader1">
+        <h1 id="logo"><a href="#">MovieHunter<img src="css/images/logo.png" alt="" /></a></h1>
+        <div id="navigation">
+          <ul>
+            <li><a class="active" href="#">HOME</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">IN THEATERS</a></li>
+            <li><a href="#">COMING SOON</a></li>
+          </ul>
+        </div>
+        <div class="userandsearch">
+          <a class="searchbtn">
+            <img src="./css/images/search.png" />
+          </a>
+          <a class="userprofile">
+            <img src="./css/images/userlogo.jpg" />
+          </a>
+        </div>
+      </div>
+      <div id="sub-navigation">
+        <div id="search">
+          <form action="#" method="get" accept-charset="utf-8">
+            <label for="search-field">SEARCH</label>
+            <input type="text" name="search field" value="Enter search here" id="search-field"
+              class="blink search-field" />
+            <input type="submit" value="GO!" class="search-button" />
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="slide-container">
-    <div class="movie-details-c">
-    <h2 class="movie-head-s">THE BATMAN</h2>
-    <h2 class="movie-rating-s">4.7(imdb) <p>1hrs:45mins</p></h2>
-    <p class="movie-description-s">When a sadistic serial killer begins murdering key political figures<br>
-       in Gotham, Batman is forced to investigate the city's hidden corruption<br>
-       and question his family's involvement.</p>
-    <h2 class="sgt-s"><span>Starring:</span>Robert pattison</h2>
-    <h2 class="sgt-s"><span>Genres:</span>Action</h2>
-    <h2 class="sgt-s"><span>Tag:</span>Action,Adventure,Horrer</h2>
-    <a ><button class="p-btn-s">PLAY NOW</button></a>
-  </div>
-    <img src="./css/images/batman.jpg"/>
-    <div class="shade"></div>
-  </div>
-  <div id="main">
-    <div id="content">
-      <div class="box">
-        <div class="head">
-          <h2>LATEST TRAILERS</h2>
-          <p class="text-right"><a href="#">View all</a></p>
-        </div>
-        <div class="moviecontainer">
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">THE BATMAN</span></span> <a href="#"><img src="css/images/movie1.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">MANICHITHRATHAZHU</span></span> <a href="#"><img src="css/images/movie2.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">100 DAYS OF LOVE</span></span> <a href="#"><img src="css/images/movie3.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">ATTACK ON TITAN</span></span> <a href="#"><img src="css/images/movie4.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">THATTATIN MARAYATHU</span></span> <a href="#"><img src="css/images/movie5.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie last">
-          <div class="movie-image"> <span class="play"><span class="name">MAYANADHI</span></span> <a href="#"><img src="css/images/movie6.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
+    <div class="slide-container">
+      <div class="movie-details-c">
+        <h2 class="movie-head-s">THE BATMAN</h2>
+        <h2 class="movie-rating-s">4.7(imdb) <p>1hrs:45mins</p>
+        </h2>
+        <p class="movie-description-s">When a sadistic serial killer begins murdering key political figures<br>
+          in Gotham, Batman is forced to investigate the city's hidden corruption<br>
+          and question his family's involvement.</p>
+        <h2 class="sgt-s"><span>Starring:</span>Robert pattison</h2>
+        <h2 class="sgt-s"><span>Genres:</span>Action</h2>
+        <h2 class="sgt-s"><span>Tag:</span>Action,Adventure,Horrer</h2>
+        <a><button class="p-btn-s">PLAY NOW</button></a>
       </div>
-        <div class="cl">&nbsp;</div>
-      </div>
-      <div class="box">
-        <div class="head">
-          <h2>TOP RATED</h2>
-          <p class="text-right"><a href="#">View all</a></p>
-        </div>
-        <div class="moviecontainer">
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">OK KANMANI</span></span> <a href="#"><img src="css/images/movie7.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">TRANCE</span></span> <a href="#"><img src="css/images/movie8.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">KALKI</span></span> <a href="#"><img src="css/images/movie9.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">EOIBINTE PUSHTHAKAM</span></span> <a href="#"><img src="css/images/movie10.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">2018</span></span> <a href="#"><img src="css/images/movie11.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie last">
-          <div class="movie-image"> <span class="play"><span class="name">NEELAKASHAM PACHAKADAL CHUVANNA BHOOMI</span></span> <a href="#"><img src="css/images/movie12.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-      </div>
-        <div class="cl">&nbsp;</div>
-      </div>
-      <div class="box">
-        <div class="head">
-          <h2>MOST COMMENTED</h2>
-          <p class="text-right"><a href="#">View all</a></p>
-        </div>
-        <div class="moviecontainer">
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">PARAVA</span></span> <a href="#"><img src="css/images/movie13.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">HOME</span></span> <a href="#"><img src="css/images/movie14.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">AMEN</span></span> <a href="#"><img src="css/images/movie15.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">KUMBALANGI NIGHTS</span></span> <a href="#"><img src="css/images/movie16.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie">
-          <div class="movie-image"> <span class="play"><span class="name">THALLUMALA</span></span> <a href="#"><img src="css/images/movie17.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-        <div class="movie last">
-          <div class="movie-image"> <span class="play"><span class="name">FIGHT CLUB</span></span> <a href="#"><img src="css/images/movie18.jpg" alt="" /></a> </div>
-          <div class="rating">
-            <p>RATING</p>
-            <div class="stars">
-              <div class="stars-in"> </div>
-            </div>
-            <span class="comments">12</span> </div>
-        </div>
-      </div>
-        <div class="cl">&nbsp;</div>
-      </div>
+      <img src="./css/images/batman.jpg" />
+      <div class="shade"></div>
     </div>
-    <div class="cl">&nbsp;</div>
+    <div id="main">
+      <div id="content">
+        <div class="box">
+          <div class="head">
+            <h2>LATEST TRAILERS</h2>
+            <p class="text-right"><a href="#">View all</a></p>
+          </div>
+          <div class="main-movie-container">
+            <div class="swiper-button-prev p1"></div>
+            <div class="moviecontainer mc1">
+
+              <div class="swiper-wrapper">
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">THE BATMAN</span></span> <a
+                      href="#"><img src="css/images/movie1.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">MANICHITHRATHAZHU</span></span> <a
+                      href="#"><img src="css/images/movie2.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">100 DAYS OF LOVE</span></span> <a
+                      href="#"><img src="css/images/movie3.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">ATTACK ON TITAN</span></span> <a
+                      href="#"><img src="css/images/movie4.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">THATTATIN MARAYATHU</span></span> <a
+                      href="#"><img src="css/images/movie5.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie last swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">MAYANADHI</span></span> <a
+                      href="#"><img src="css/images/movie6.jpg" alt="" /></a> </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-button-next n1"></div>
+          </div>
+          <div class="cl">&nbsp;</div>
+        </div>
+        <div class="box">
+          <div class="head">
+            <h2>TOP RATED</h2>
+            <p class="text-right"><a href="#">View all</a></p>
+          </div>
+          <div class="main-movie-container">
+            <div class="swiper-button-prev p2"></div>
+            <div class="moviecontainer mc2">
+              <div class="swiper-wrapper">
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">OK KANMANI</span></span> <a
+                      href="#"><img src="css/images/movie7.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">TRANCE</span></span> <a href="#"><img
+                        src="css/images/movie8.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">KALKI</span></span> <a href="#"><img
+                        src="css/images/movie9.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">EOIBINTE PUSHTHAKAM</span></span> <a
+                      href="#"><img src="css/images/movie10.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">2018</span></span> <a href="#"><img
+                        src="css/images/movie11.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie last swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">NEELAKASHAM PACHAKADAL CHUVANNA
+                        BHOOMI</span></span> <a href="#"><img src="css/images/movie12.jpg" alt="" /></a> </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next n2"></div>
+          </div>
+          <div class="cl">&nbsp;</div>
+        </div>
+        <div class="box">
+          <div class="head">
+            <h2>MOST COMMENTED</h2>
+            <p class="text-right"><a href="#">View all</a></p>
+          </div>
+          <div class="main-movie-container">
+            <div class="swiper-button-prev p3"></div>
+            <div class="moviecontainer mc3">
+              <div class="swiper-wrapper">
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">PARAVA</span></span> <a href="#"><img
+                        src="css/images/movie13.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">HOME</span></span> <a href="#"><img
+                        src="css/images/movie14.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">AMEN</span></span> <a href="#"><img
+                        src="css/images/movie15.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">KUMBALANGI NIGHTS</span></span> <a
+                      href="#"><img src="css/images/movie16.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">THALLUMALA</span></span> <a
+                      href="#"><img src="css/images/movie17.jpg" alt="" /></a> </div>
+
+                </div>
+                <div class="movie last swiper-slide">
+                  <div class="movie-image"> <span class="play"><span class="name">FIGHT CLUB</span></span> <a
+                      href="#"><img src="css/images/movie18.jpg" alt="" /></a> </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next n3"></div>
+          </div>
+          <div class="cl">&nbsp;</div>
+        </div>
+      </div>
+      <div class="cl">&nbsp;</div>
+    </div>
+
   </div>
-  
-</div>
-<!-- END PAGE SOURCE -->
+  <!-- END PAGE SOURCE -->
 </body>
+<!-- Swiper JS -->
+<script src="./js/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="./js/script.js"></script>
+
 </html>

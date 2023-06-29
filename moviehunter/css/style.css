@@ -283,6 +283,7 @@ h1#logo img{
 }
 #main {
 	/*border-bottom:1px dashed #413e3e;*/
+	padding: 47px;
 }
 #content {
 
@@ -305,10 +306,16 @@ h1#logo img{
 	color: white;
 	font-size: 20px;
 }
+.main-movie-container{
+	display: flex;
+	align-items: center;
+}
 .moviecontainer{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	width: 1301px;
+    overflow: hidden;
 }
 
 .box .movie {
