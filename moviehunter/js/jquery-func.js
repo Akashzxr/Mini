@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	$(".movie-image").hover(function(){
-		$(this).find(".play").show();
+		$(this).find(".play").css("display","flex");
 
 	},
 	function()

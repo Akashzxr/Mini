@@ -227,7 +227,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--swiper-navigation-color, var(--swiper-theme-color))
+   /* color: var(--swiper-navigation-color, var(--swiper-theme-color));*/
+    color: white;
+    background-color: #161616;
+    height: 4rem;
+    border-radius: 5px;
 }
 
 .swiper-button-next.swiper-button-disabled,

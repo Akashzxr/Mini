@@ -319,48 +319,68 @@ h1#logo img{
 }
 
 .box .movie {
-	width:152px;
+	width:379px;
 	/*float:left;*/
 	padding-right:12px;
 }
 .movie-image {
 	float:left;
-	width:152px;
+	width:100%;
 	height:214px;
 	position:relative;
 }
 .movie-image img {
-	width:152px;
-	height:214px;
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.movie-image a {
+/*.movie-image a {
 	float:left;
 	display:inline;
-	width:152px;
+	width:100%;
 	height:214px;
 	position:relative;
 	z-index:2;
-}
+}*/
 .play {
 	position:absolute;
 	top:0;
 	left:0;
-	width:152px;
+	width:100%;
 	height:214px;
-	background:url('images/image-hover.png');
-	display:block;
+	background: linear-gradient(358deg, rgba(0, 0, 0, 0.9) 0%, rgba(20, 20, 20, 0.9) 15%, rgba(83, 100, 141, 0) 100%);
 	z-index:5;
 	cursor:pointer;
-	display:none;
 	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.play a{
+	padding-left: 18px;
+}
+.time{
+	padding-left: 18px;
+    font-size: 15px;
+    color: white;
+}
+.p-btn-card{
+	background: #bf000a;
+    border: none;
+    color: white;
+    width: 114px;
+    height: 29px;
+    font-size: 1.3em;
 }
 .movie span.name {
 	font-weight:bold;
 	color:#fff;
-	font-size:14px;
+	font-size:17px;
 	text-align:center;
-	padding-top:160px;
 	display:block;
+	padding-left: 18px;
 }
 .box .last {
 	padding:0;
@@ -393,7 +413,7 @@ h1#logo img{
 	line-height:0;
 	text-indent:-4000px;
 }
-.comments {
+.comments{
 	background:url('images/comments.gif') no-repeat 0 center;
 	padding-left:12px;
 	float:right;

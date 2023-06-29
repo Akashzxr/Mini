@@ -1,6 +1,6 @@
 var swiper = new Swiper(".mc1", {
     slidesPerView: 3,
-    spaceBetween: 65,
+    spaceBetween: 20,
     loop: true,
     centerSlide: 'true',
     fade: 'true',
@@ -30,7 +30,7 @@ var swiper = new Swiper(".mc1", {
 
   var swiper = new Swiper(".mc2", {
     slidesPerView: 3,
-    spaceBetween: 65,
+    spaceBetween: 20,
     loop: true,
     centerSlide: 'true',
     fade: 'true',
@@ -60,7 +60,7 @@ var swiper = new Swiper(".mc1", {
 
   var swiper = new Swiper(".mc3", {
     slidesPerView: 3,
-    spaceBetween: 65,
+    spaceBetween: 20,
     loop: true,
     centerSlide: 'true',
     fade: 'true',
